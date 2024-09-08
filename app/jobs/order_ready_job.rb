@@ -1,6 +1,4 @@
 class OrderReadyJob < ApplicationJob
-  include Sidekiq::Worker
-
   queue_as :default
 
   def perform(customer_id, order_id)
