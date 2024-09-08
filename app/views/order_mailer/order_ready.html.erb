@@ -1,0 +1,15 @@
+<p>Hello <%= @customer_name %></p>
+
+<p>Your Order with the following items are ready to be picked</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% @order_items.each do |item| %>
+	  <tr>
+	    <td><%= item.item_name %></td>
+	  </tr>
+	<% end %>
+</table>
+	
